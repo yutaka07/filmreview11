@@ -1,0 +1,382 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  color: #444;
+  line-height: 150%;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  background: rgb(0, 0, 0);
+}
+.site-width {
+  width: 980px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Montserrat", sans-serif;
+}
+header a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(194, 194, 194);
+}
+
+header h1 {
+  width: 300px;
+  line-height: 80px;
+}
+header nav {
+  display: flex;
+  list-style: none;
+  line-height: 80px;
+}
+header nav li {
+  margin-left: 10px;
+  font-size: 16px;
+}
+#contents {
+  min-height: 100vh;
+  display: flex;
+  margin-top: 20px;
+}
+.page-home > #contents {
+  flex-direction: column;
+}
+#sidebar {
+  width: 200px;
+  padding: 15px;
+  margin-right: 50px;
+  background: #f6f5f5;
+  margin-left: 30px;
+}
+
+#sidebar .title {
+  text-align: center;
+  margin-top: 15px;
+}
+#sidebar ul {
+  text-decoration: none;
+}
+#sidebar ul li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+#sidebar ul li a {
+  font-size: 24px;
+  text-decoration: none;
+  color: #333;
+}
+#topbar {
+  width: 100%;
+  padding: 15px;
+  height: 50px;
+  background: #f6f5f5;
+  display: flex;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+#topbar > form{
+  display: flex;
+}
+#topbar .title{
+  margin-right: 50px;
+  margin-left: 30px;
+}
+
+#main {
+  flex: 1;
+  padding: 10px 20px;
+  background: rgb(243, 243, 243);
+}
+#main > h1 {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.panel {
+  display: flex;
+  padding: 15px;
+  text-decoration: none;
+  margin-bottom: 10px;
+  border-bottom: solid 5px #ffffff;
+}
+.panel-head img {
+  width: 100px;
+  height: 150px;
+}
+
+.panel-body {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.panel-title {
+  margin-bottom: 10px;
+  font-size: 25px;
+  color: #444;
+}
+.panel-title > a {
+  text-decoration: none;
+}
+.panel-comment {
+  font-size: 15px;
+  background: white;
+  min-height: 100px;
+  padding: 16px;
+  box-sizing: border-box;
+  color: #333;
+  margin-top: 10px;
+}
+.area-bord {
+  height: 500px;
+  overflow: scroll;
+  background: white;
+  padding: 15px;
+}
+.area-send-msg {
+  padding: 15px;
+  margin-right: 20px;
+}
+.area-send-msg textarea {
+  width: 100%;
+  background: white;
+  height: 100px;
+  padding: 15px;
+  font-size: 15px;
+}
+.area-send-msg .btn-right {
+  display: flex;
+  justify-content: flex-end;
+}
+.area-send-msg .btn-send {
+  width: 150px;
+}
+.msg-left{
+  display: flex;
+  width: 90%;
+  margin-bottom: 30px;
+}
+.msg-right{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  width: 90%;
+  margin-bottom: 30px;
+  margin-left: 90px;
+}
+.area-bord .msg-cnt .avatar {
+  width: 5.2%;
+}
+.area-bord .msg-cnt .avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+.area-bord .msg-cnt .msg-inrTxt {
+  width: 85%;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0 25px 0 25px;
+  background: #f6f5f5;
+}
+
+/* ボタン */
+.btn {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #333;
+  color: rgb(165, 165, 165);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.29);
+  border-bottom: solid 3px #627295;
+  border-radius: 3px;
+  font-weight: bold;
+  text-shadow: 1px, 1px, 1px, rgba(255, 255, 255, 0.5);
+}
+.btn:active {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  border-bottom: none;
+}
+.btn:hover {
+  cursor: pointer;
+}
+#footer {
+  width: 100%;
+  text-align: center;
+  color: #f6f5f5;
+  padding: 15px;
+  font-size: 12px;
+  background: rgb(0, 0, 0);
+}
+.form-container {
+  margin: 0 auto;
+}
+.form-container {
+  margin: 80px auto;
+}
+.form {
+  width: 400px;
+  margin: 0 auto;
+  border: solid 5px #ffffff;
+  padding: 30px;
+}
+.form > h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+input[type="text"],
+input[type="password"],
+input[type="number"],
+.form select,
+textarea {
+  display: block;
+  margin-bottom: 15px;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 60px;
+  background: rgb(255, 255, 255);
+  font-size: 18px;
+  border: none;
+}
+.btn-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.page-withdraw .btn-mid {
+  margin-right: 150px;
+  width: 100px;
+}
+.page-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.form .area-drop {
+  margin-bottom: 15px;
+  width: 100%;
+  height: 140px;
+  background: #ffffff;
+  color: rgb(194, 194, 194);
+  text-align: center;
+  line-height: 150px;
+  position: relative;
+  box-sizing: border-box;
+}
+.form .input-file {
+  opacity: 0;
+  width: 100%;
+  height: 140px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2; /* 必ずz-indexをつけないと登録画像を変更する際にドラッグ＆ドロップできなくなる*/
+}
+.form .prev-img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+.form .imgDrop-container {
+  width: 33.333%;
+  float: left;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+.form .counter-text {
+  text-align: right;
+}
+label {
+  display: block;
+}
+
+#sidebar > a {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.label-require{
+  background: rgb(255, 57, 57);
+  padding: 5px;
+  font-size: 10px;
+  margin-left: 5px;
+  border-radius: 5px;
+  color: #f6f5f5;
+}
+
+.search-title{
+  display: flex;
+    justify-content: flex-end;
+}
+.search-left{
+  background: #fff;
+    padding: 5px;
+    border-radius: 10px;
+}
+.pagination-list{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.list-item{
+  margin-right: 5px;
+  font-size: 18px;
+  background: #fff;
+  padding: 8px 10px;
+}
+.list-item > a{
+  text-decoration: none;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+}
+.selectbox > select{
+  padding: 0 5px 5px 5px;
+    border: #f6f5f5;
+}
+.fa-heart{
+  margin-left: 720px;
+}
+.panel-body .icn-like{
+  color: #ddd;
+  font-size: 25px;
+}
+.icn-like:hover{
+  cursor: pointer;
+}
+.icn-like.active{
+  color: #fe8a8b;
+  font-size: 25px;
+}
+
+.js-click-like > .panel-title{
+  position: absolute;
+}
+.msg-slide{
+  background: rgba(144, 255, 255, 0.575);
+  width: 100%;
+  height: 30px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  font-family: "Montserrat",sans-serif;
+  font-size: 20px;
+  color: #444;
+  line-height: 30px;
+}
